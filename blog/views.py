@@ -13,5 +13,10 @@ from .models import Post
 
 
 class HomeView(ListView):
-    modeel = Post
+    model = Post
     template_name = 'index.html'
+
+
+class ArticleDetailView(DetailView):
+    model = Post
+    template_name = 'article.html'
